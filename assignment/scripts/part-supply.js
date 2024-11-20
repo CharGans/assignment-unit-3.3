@@ -31,7 +31,7 @@ console.log('Supply Changes after pop', supplyChanges);
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Add the value 25 into supplyChanges.');
 supplyChanges.push(25);
-console.log('Supply changes after adding', supplyChanges);
+console.log('Supply changes after push', supplyChanges);
 
 // 6. Create three new variables named 'positives', 'negatives', and
 //    'zeroes' whose values are empty arrays. Then, write a for loop
@@ -43,20 +43,20 @@ console.log('Supply changes after adding', supplyChanges);
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
 let positives = [];
 let negatives = [];
-let zeros = [];
+let zeroes = [];
 for (let i = 0; i < supplyChanges.length; i++) {
   if (supplyChanges[i] > 0) {
     positives.push(supplyChanges[i]);
   } else if (supplyChanges[i] === 0) {
-    zeros.push(supplyChanges[i])
+    zeroes.push(supplyChanges[i])
   } else {
 negatives.push(supplyChanges[i]);
   }
 
 }
-console.log('positives', positives);
-console.log('negatives', negatives);
-console.log('other', zeros);
+console.log('Positives', positives);
+console.log('Negatives', negatives);
+console.log('Zeroes', zeroes);
 
 
 
